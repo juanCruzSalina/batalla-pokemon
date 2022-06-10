@@ -1,0 +1,32 @@
+.input__main {
+  width: fit-content;
+  padding: .75rem 1.20rem;
+  border: 1px solid #9e9e9e;
+  border-radius: 3px;
+  cursor: text;
+  transition: all ease-in .3s;
+  background-color: #f5f5f5;
+}
+
+.input__main.error {
+  border: 2px solid rgb(155, 34, 38);
+}
+
+.input__main:hover {
+  outline: #616161 solid 1px;
+}
+
+.input__icon {
+  margin-right: 1rem;
+  color: rgba(47, 79, 79, .7);
+}
+
+.input__text {
+  background-color: #f5f5f5;
+  font-size: 1.15rem;
+  border: none;
+}
+
+.input__text:focus-visible {
+  outline: none;
+}

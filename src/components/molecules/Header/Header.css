@@ -1,0 +1,20 @@
+.header__main {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+}
+
+.header__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 50%;
+}
+
+.form__submit {
+  display: none;
+}

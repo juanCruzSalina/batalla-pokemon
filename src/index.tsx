@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css'
 import App from './App';
+import { UIProvider } from './context/ui/UIProvider';
 import reportWebVitals from './reportWebVitals';
+import { EntryProvider } from './context/entry/EntryProvider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <UIProvider>
+      <EntryProvider>
+        <App />
+      </EntryProvider>
+    </UIProvider>
   </React.StrictMode>
 );
 

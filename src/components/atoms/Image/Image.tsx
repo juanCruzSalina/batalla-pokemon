@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import './Image.css'
+import { faImage } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Image = () => {
+interface IImage {
+  url?: string
+}
+
+const Image: React.FC<IImage> = (props) => {
   return (
-    <div>Image</div>
+    <Fragment>
+      {props.url
+        ? <img src={props.url} alt='alt-pokemon' className='image__main'/>
+        : (
+            <span className='alt-image'>
+              <FontAwesomeIcon icon={faImage} />
+            </span>
+          )
+      }
+    </Fragment>
   )
 }
 

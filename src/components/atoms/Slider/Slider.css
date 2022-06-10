@@ -1,0 +1,15 @@
+.slider__main {
+  display: flex;
+}
+
+.input__container {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.slider__input {
+  margin: 0 .75rem;
+}

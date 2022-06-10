@@ -1,2 +1,12 @@
 .App {
+  background-color: #eeeeee;
+  background-image: radial-gradient(#9e9e9e 1px, #eeeeee 1px);
+  background-size: 15px 15px;
+  display: grid;
+  grid-template:
+    [row1-start] 'header' 20vh [row1-end]
+    [row2-start] 'table' 30vh [row2-end]
+    [row3-start] 'form' 50vh [row3-end]
+    / 100% ;
+  place-items: center;
 }

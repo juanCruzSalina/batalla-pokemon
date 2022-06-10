@@ -1,0 +1,11 @@
+.image__main {
+  width: 2rem;
+  height: 1rem;
+}
+
+.alt-image {
+  width: 2rem;
+  height: 1rem;
+  background-color: rgba(189, 189, 189, .8);
+  color: rgb(66, 66, 66);
+}

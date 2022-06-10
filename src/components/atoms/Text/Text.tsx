@@ -1,8 +1,14 @@
 import React from 'react'
+import './Text.css'
+interface IText {
+  children: string;
+}
 
-const Text = () => {
+const Text: React.FC<IText> = (props) => {
   return (
-    <div>Text</div>
+    <p className='text__main'>
+      {props.children}
+    </p>
   )
 }
 
